@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  src: url(./fonts/Inter-Regular.ttf);
+  font-family: 'Inter';
+}
+@font-face {
+  src: url(./fonts/Inter-Bold.ttf);
+  font-family: 'Inter-bold';
+}
+
+body {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  width: 550px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.line-after-card {
+  width: 100%;
+  height: 1px;
+  background-color: #f5f5f5;
+}
+
+/************* Start Of The Header *************/
+.header {
+  background-color: #f55a5a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 16px;
+  font-size: 14px;
+}
+
+.header--logo {
+  margin-right: 10px;
+}
+
+/************* Start Of The Card *************/
+.cards--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px 0 40px;
+} 
+.card {
+  display: flex;
+  margin: 18px 0;
+}
+.card--img {
+  margin-right: 20px;
+}
+.card--body {
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card--location {
+  margin-bottom: 5px;
+}
+.card--location > i {
+  color: #f55a5a;
+  margin-right: 5px;
+}
+.card--location__country {
+  text-transform: uppercase;
+  color: #2b283a;
+  letter-spacing: 1px;
+  margin-right: 12px;
+}
+.card--location > a {
+  color: #918e9b;
+}
+.card--location > a:hover {
+  color: #6a696d;
+}
+.card--title {
+  font-family: 'Inter-bold', sans-serif;
+  color: #2b283a;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30.26px;
+  margin-bottom: 12px;
+}
+.card--date {
+  color: #2B283A;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.card--text {
+  line-height: 16px;
+}
